@@ -1,0 +1,96 @@
+/*div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }*/
+  /* registration style */
+      
+ 
+    
+ 
+  * {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: lightblue;
+  }
+   
+  /* Hidden class */
+  .nodisplay{
+      display:none;
+  }
+   
+  /* image styling */
+  .imges {
+    width:250px;
+    height: 250px;
+    margin: 3px;
+    
+  }
+   
+  .flex-container{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+     
+     
+    
+  }
+   
+  
+  /* Form group and input elements */
+  .container{
+    margin: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  #sumbitBtn {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  /* Display info */
+  #displayInfo {
+    margin: 2rem;
+  }
+  
+  #info {
+    font-size: 1rem;
+  }
+  
+  /* dice Image container*/
+  #diceWthScore {
+    margin: 1.5rem;
+  }
+  .formInfo{
+    text-align: center;
+  
+  }
+  .container{
+    background-color: aqua;
+  }
+  
+  

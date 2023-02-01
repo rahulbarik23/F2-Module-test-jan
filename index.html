@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end 2 Module Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Flex Box of image -->
+    <div class="flex-container">
+        <div>
+            <button id="regist" onclick="openForm()"><img class="imges" src="register.png" alt="img1" ></button>
+        </div>
+ 
+        <div>
+            <button id="regidper" onclick="displayFormInfo()"><img class="imges" src="registered person.png" alt="img2" ></button>
+        </div>
+ 
+        <div>
+            <button id="dicimg" onclick="displayDiceScore()"><img class="imges" src="dice.png" alt="img3" ></button>
+        </div>
+ 
+        <div>
+            <button id="coupning" onclick="generateCouponCode()"><img class="imges" src="coupne.png" alt="img4" ></button>
+        </div>
+    </div>
+
+    <!-- Form Group -->
+    <div class="container nodisplay" id="form">
+        <h3>REGISTRATION FORM</h3><BR>
+        <label for="name">Name: </label>
+        <input type="text" id="fname" required>
+        <br><br>
+        <label for="userName">User Name: </label>
+        <input type="text" id="formusername" required>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="formemail" required><br><BR>
+        <button id="sumbitBtn" type="submit" onclick="submitFormInfo()">Submit</button>
+    </div>
+
+    <!-- Form information  -->
+    <div class="formInfo nodisplay" id="displayformInfo">
+        <h2>Entered information </h2><br>
+        <span id="finfo"></span><br><br
+        <p>Click on next Image !</p>
+    </div>
+
+    <!-- dice img score  -->
+    <div class="diceWthScore nodisplay" id="diceScore">
+        <p>Attempts left : <span id="attemptsLeft">0</span></p><br>
+        <div>
+            <button id="diceImg" onclick="diceClickfun()"><img class="img" src="clickdice.png"
+                    alt="diceImage"></button><br><br>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Congratulate and try again Img -->
+    <div>
+        <img class="nodisplay" id="congimage" src="https://media.tenor.com/VFhiy-TvMkEAAAAi/hello-kitty-congratulations.gif" alt="congimg">
+    </div>
+    <div>
+        <img class="nodisplay" id="tryImg" src="https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Sad-Face-Emoji.png" alt="tryAgainImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
